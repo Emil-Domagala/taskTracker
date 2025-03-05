@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "task_list")
 @NoArgsConstructor
 @AllArgsConstructor
-public class TaksList {
+public class TaskList {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "id", updatable = false, nullable = false)

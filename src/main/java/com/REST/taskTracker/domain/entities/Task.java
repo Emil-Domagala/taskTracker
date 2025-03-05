@@ -45,7 +45,7 @@ public class Task {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "task_list_id")
-    private TaksList taksList;
+    private TaskList taksList;
 
     @Column(name = "created", nullable = false)
     private LocalDateTime created;

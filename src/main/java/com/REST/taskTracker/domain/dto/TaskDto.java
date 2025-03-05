@@ -7,7 +7,7 @@ import com.REST.taskTracker.domain.entities.TaskPriority;
 import com.REST.taskTracker.domain.entities.TaskStatus;
 
 
-public record TaksDto(
+public record TaskDto(
         UUID id,
         String title,
         String description,
