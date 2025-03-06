@@ -3,7 +3,6 @@ package com.REST.taskTracker.domain.entities;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -45,7 +44,7 @@ public class Task {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "task_list_id")
-    private TaskList taksList;
+    private TaskList taskList;
 
     @Column(name = "created", nullable = false)
     private LocalDateTime created;
